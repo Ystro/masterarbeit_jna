@@ -41,7 +41,9 @@
             "name": "lualatex",
             "command": "lualatex",
             "args": [
-                "%DOC%.tex"
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "%DOC%"
             ]
         },
         {
