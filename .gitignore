@@ -24,3 +24,5 @@
 
 # IDEs
 .texpadtmp/
+.claude/settings.json
+.claude/settings.local.json

@@ -4,15 +4,22 @@
     },
     "latex-workshop.latex.recipes": [
         {
-            "name": "build",
+            "name": "Docker (FOM Template)",
             "tools": [
-                "lualatex",
-                "biber",
-                "lualatex",
-                "lualatex"
+                "docker-compose"
             ]
         }
     ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "docker-compose",
+            "command": "docker-compose",
+            "args": [
+                "up"
+            ]
+        }
+    ],
+    "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.latex.clean.fileTypes": [
         "*.aux",
         "*.bcf",
@@ -38,23 +45,5 @@
         "*.nls*",
         "*.run.xml",
         "*.fdb_latexmk"
-    ],
-    "latex-workshop.latex.tools": [
-        {
-            "name": "lualatex",
-            "command": "lualatex",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "biber",
-            "command": "biber",
-            "args": [
-                "%DOCFILE%"
-            ]
-        }
     ]
 }
