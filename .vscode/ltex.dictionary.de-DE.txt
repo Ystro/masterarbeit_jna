@@ -1,0 +1,9 @@
+RBAC
+ABAC
+Prompt-Injection
+Informatiosentitäten
+sprachnahe
+Detecon
+Retrieval-Augmented
+prototypenhafte
+Pre-Filtering

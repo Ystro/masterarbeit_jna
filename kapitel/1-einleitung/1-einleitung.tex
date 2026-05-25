@@ -1,37 +1,45 @@
 \section{Einleitung}
-Mit voranschreitender Entwicklung von Künstlicher Intelligenz, insbesondere in den Bereichen
-Technologie und Zugänglichkeit, können Unternehmen und weitere Organisationen die Implementierung
-von KI-Anwendungen für ihre Prozesse erwägen. Als Beispiel können klassische Informationssysteme und
-Wissensmanagement durch generative KI bei der Wissensbereitstellung unterstützen. 
+Mit voranschreitender Entwicklung von Künstlicher Intelligenz, insbesondere in den Bereichen Technologie und Zugänglichkeit, können Unternehmen und weitere Organisationen die Implementierung von KI-Anwendungen für ihre Prozesse erwägen. Als Beispiel können klassische Informationssysteme und Wissensmanagement durch generative KI bei der Wissensbereitstellung unterstützen. 
 
-Die Suche nach Informationen benötigt in vielen Organisationen einen wesentlichen Anteil der Arbeitszeit ihrer
-Mitarbeitenden. Das McKinsey Global Institute spricht hier beispielsweise von 19\% der verfügbaren Arbeitszeit.\autocite[Vgl.][]{chuiSocialEconomyUnlocking}
-Eine aktuelle Untersuchung der Detecon In-ternational GmbH aus November 2025 zeigt, dass die Nutzung von KI-Modellen auf Basis von Retrieval-Augmented Generation, 
-welche bei der Generierung von Antworten neben dem trainierten Model auch externe Informationsquellen einbezieht, diese benötigte Arbeits-zeit im Schnitt um 40\% reduzieren kann.\autocite[Vgl.][]{deteconinternationalgmbhhrsg.GenerativeAIRevolutionizing2025}
-Diese Effizienzgewinne zeigen, dass es für Orga-nisationen ein Effizienzgewinn sein kann, die Implementierung von einem entsprechenden KI-Modell, on-premise oder in der Cloud, zu erwägen.
+Die Suche nach Informationen benötigt in vielen Organisationen einen wesentlichen Anteil der Arbeitszeit ihrer Mitarbeitenden. Das McKinsey Global Institute spricht hier beispielsweise von 19 \% der verfügbaren Arbeitszeit.\autocite[Vgl.][]{chuiSocialEconomyUnlocking} Eine aktuelle Untersuchung der Detecon International GmbH aus November 2025 zeigt, dass die Nutzung von KI-Modellen auf Basis von Retrieval-Augmented Generation, welche bei der Generierung von Antworten neben dem trainierten Model auch externe Informationsquellen einbezieht, diese benötigte Arbeitszeit im Schnitt um 40 \% reduzieren kann.\autocite[Vgl.][]{deteconinternationalgmbhhrsg.GenerativeAIRevolutionizing2025} Diese Effizienzgewinne zeigen, dass es für Organisationen ein Effizienzgewinn sein kann, die Implementierung von einem entsprechenden KI-Modell, on-premise oder in der Cloud, zu erwägen.
 
-Für Organisationen gibt es unterschiedliche Gründe, KI-Systeme on-premise zu implementieren und trainieren, statt sie in einer Cloud zu hosten. 
-Hierzu zählen unter anderem daten-schutzrelevante Bedenken, Souveränität für Daten und Prozesse sowie Kostenkontrolle bei Nutzung der implementierten Software. 
-Hinzu kommt, dass sich on-premise Systeme gegeben falls besser in bereits bestehende Unternehmensstrukturen einbringen lassen, 
-beispielsweise bei Organisationen mit umfangreichen sensiblen Datenbeständen.
+Für Organisationen gibt es unterschiedliche Gründe, KI-Systeme on-premise zu implementieren und trainieren, statt sie in einer Cloud zu hosten. Hierzu zählen unter anderem datenschutzrelevante Bedenken, Souveränität für Daten und Prozesse sowie Kostenkontrolle bei Nutzung der implementierten Software. Hinzu kommt, dass sich on-premise Systeme gegebenenfalls besser in bereits bestehende Unternehmensstrukturen einbringen lassen, beispielsweise bei Organisationen mit umfangreichen sensiblen Datenbeständen.
 
-Die Motivation für diese Arbeit ergibt sich insbesondere aus dem Spannungsfeld zwischen der Steigerung der Produktivität von Mitarbeitenden 
-und den Anforderungen an IT-Governance bei der Implementierung generativer Sprachmodelle in Organisationen. 
-Zusätzlich stellt die Integration solcher Systeme in bestehende Berechtigungs- und Zugriffskonzepte eine besondere Herausforderung dar, 
-die sich durch eine prototypenhafte Implementie-rung in einer on-premise-Umgebung praxisnah analysieren lässt.
-Diese Arbeit soll anhand einer spezifischen Organisation durchgeführt werden, um eine möglichst praxisnahe Einordnung und Analyse zu ermöglichen. 
-Trotz dessen sollen die identifizierten Herausforderungen und Lösungsansätze auf andere Organisationen anwendbar sein, 
-die das Active Directory nutzen und ein lokal betriebenes LLM in die bereits vor-handenen Infrastrukturen und Berechtigungskonzepte integrieren wollen. 
+Die Motivation für diese Arbeit ergibt sich insbesondere aus dem Spannungsfeld zwischen der Steigerung der Produktivität von Mitarbeitenden und den Anforderungen an IT-Governance bei der Implementierung generativer Sprachmodelle in Organisationen. Zusätzlich stellt die Integration solcher Systeme in bestehende Berechtigungs- und Zugriffskonzepte eine besondere Herausforderung dar, die sich durch eine prototypenhafte Implementierung in einer on-premise Umgebung praxisnah analysieren lässt. Diese Arbeit soll anhand einer spezifischen Organisation durchgeführt werden, um eine möglichst praxisnahe Einordnung und Analyse zu ermöglichen. Trotz dessen sollen die identifizierten Herausforderungen und Lösungsansätze auf andere Organisationen anwendbar sein, die das Active Directory nutzen und ein lokal betriebenes LLM in die bereits vorhandenen Infrastrukturen und Berechtigungskonzepte integrieren wollen. 
 
+% - Stichpunkte zur Methodik (Literaturanalyse und Prototyp Entwicklung und Design-Science-Research-Ansatz )%% TODO Umschreiben
 
 \subsection{Hintergrund und Motivation}
-Todo
+%% TODO
 
-\subsection{Problemstellung}
-Todo
+\subsection{Problemidentifizierung}
+Der Einsatz von generativer KI in Form vom Large Language Models (LLMs) nimmt in Unternehmen und anderen Organisationen stark zu. Die Nutzung eines KI-Modells, in dem die Mitarbeitenden über einen Chat das relevante Wissen abfragen und als natürliche Textnachricht zusammengefasst erhalten, stellt eine neue Nutzungsschnittstelle mit dem Wissensmanagement der Organisationen dar. Die intuitive Nutzung sowie die Arbeitszeitersparnis sind attraktive Vorteile für die Implementierung eines entsprechenden KI-Modells.  
+
+Aufgrund dieser Vorteile liegt der Fokus der aktuellen Forschung insbesondere in der Optimierung der funktionalen Vorteile sowie der Implementierung des Modells selbst in Unternehmen. Für Organisationen mit komplexen Sicherheits- und Governance-Anforderungen ist zusätzlich die Forschung zur Implementierung von KI-Modellen unter Berücksichtigung der bereits angewendeten Sicherheitskonzepte relevant. Hier wurden mit Frameworks wie „Pre-Filtering“ oder „Query-Time Access Control“ zwar Wege der Implementierung analysiert, jedoch fokussieren sich die Untersuchungen meist nur auf die technische Umsetzung und die Ergebnisse für Unternehmen und Organisationen, jedoch nicht auf die Berücksichtigung bereits vorhandener Berechtigungskonzepte. 
+%% TODO Umschreiben
 
 \subsection{Forschungsfrage und Zielsetzung}
-Forschungsfrage: Welcher Architekturansatz für lokal betriebenen LLM-Informationssysteme ermöglicht die Information Retrieval bei regelkonformer Anwendung eines bestehenden Active Directory Berechtigungskonzepts mit vertretbarem Integrations- und Wartungsaufwand?
+Da das Active Directory von Microsoft das meistgenutzte Berechtigungssystem im Unternehmen darstellt, soll mit dieser Arbeit ein geeignetes Implementierungsverfahren für KI-Modelle gefunden werden, in dem bereits vorhandene Zugriffsregeln (rollenbasiert sowie nutzerbasiert) bei adäquatem Aufwand möglichst sicher berücksichtigt werden. Vortrainierte LLMs, die bereits zum Trainingszeitpunkt Zugriff auf sämtliche Wissensquellen erhalten, lassen sich durch Prompt Engineering täuschen und geben gelegentlich Wissen an unautorisierte Nutzer, beziehungsweise Mitarbeitende, weiter. Das Umgehen der gesetzten Berechtigungskonzepte kann nicht nur negative Folgen für das Unternehmen mit sich bringen, sondern auch die Antwortqualität für die Mitarbeiter aufgrund der Ausgabe von irrelevantem Wissen durch Kontextunschärfe reduzieren. //TODO Umschreiben und Quellen ändern
+
+%% - Zielsetzung: Entiwcklung einer Bewertungsmatrix, Implementierung POC, Ableitung von Handlungsempfehlungen
+
+Im Rahmen der Methodik wird daher die folgende Forschungsfrage beantwortet:
+\begin{center}
+\shadowbox{%
+  \parbox{0.82\textwidth}{%
+    \vspace{0.4em}
+    \textit{Welcher Architekturansatz für lokal betriebene LLM-Informationssysteme ermöglicht die Information Retrieval bei regelkonformer Anwendung eines bestehenden Active Directory Berechtigungskonzepts mit vertretbarem Integrations- und Wartungsaufwand?}
+    \vspace{0.4em}
+  }%
+}
+\end{center}
+
+%% - Unterfragen (Welche Ansätze existieren schon, welche Kriterien eigenen sich)
+%% - Beitrag zur Forschung
 
 \subsection{Abgrenzung}
-Todo
+Um den Fokus auf die Auswahl einer geeigneten Implementierungsmethode für ein KI-Modell zu ermitteln, welches ein bereits implementiertes Berechtigungskonzept durch Microsoft Active Directory berücksichtigt, wird die Forschung ausschließlich auf einem on-premise System stattfinden, während mögliche Abweichungen in der Implementierung auf Cloud-Systemen nicht untersucht werden. Die stellt auch eine höhere Kontrolle der eingesetzten Hard- und Software dar, wodurch die Ergebnisauswertung besser eingegrenzt und interpretiert werden kann.
+Für die Implementierung der Proof of Concept werden die durch die Bewertungsmatrix er-mittelten KI-Modelle lokal trainiert. Da hierfür bereits eine solide Forschungsgrundlage und Best Practices bestehen, wird die Implementierung im methodischen Teil nur skizziert und den Forschungsstand referenziert. Eine genaue Untersuchung des KI-Modelltrainings sowie einer Performanceoptimierung wird nicht stattfinden. 
+Die Performance der KI-Modelle steht im engen Zusammenhang mit der Hardwareperformance und somit den Anschaffungs- und Betriebskosten, außerdem steht sie Zusammenhang mit der potenziellen Kosteneinsparung für die Organisationen. Da keine Optimierung der Performance im Rahmen dieser Arbeit stattfindet, wird auch kein Kostenbenchmarking für die Implementierung unternommen. 
+Des Weiteren wird die Antwortqualität der implementierten KI-Modelle weder interpretiert noch durch Mitarbeitende oder Experten bewertet. Die Antworten sollen lediglich inhaltlich, unter Berücksichtigung der zugrundeliegenden Berechtigungskonzepte geprüft werden. 
+%% TODO umschreiben
